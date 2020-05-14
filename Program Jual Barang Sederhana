@@ -1,0 +1,41 @@
+/*
+Author  :
+Nama    : Priswanto khoiri
+NIM     : 04319003
+Prodi   : Teknik Informatika
+*/
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+string brg[3][3] = {{"1","Sabun","2000"},{"2","Pasta gigi","7500"},{"3","shampoo","2500"}};
+int kode_brg;
+int hrg;
+int i;
+int jmlh;
+string nm;
+// pendeklarasian id BARANG
+cout << "DAFTAR BARANG YANG DIJUAL" <<endl;
+cout << "ID 1 : Sabun"<<endl;
+cout << "ID 2 : Pasta gigi"<<endl;
+cout << "ID 3 : Shampoo"<<endl;
+//penginputan ID
+cout << "Masukan ID barang : ";
+cin >> kode_brg;
+cout << "jumlah : ";
+cin >> jmlh;
+//program pengolahan data
+  for (int i = 0;i<5;i++){
+    if (kode_brg==i+1){
+      nm = brg[i][1];
+      hrg = stoi(brg[i][2]);
+      cout << "Beli " << jmlh<<" "<< nm;
+      int total = hrg*jmlh;
+      cout << " total belanja  : Rp." << total;
+      //error ketika kode ID salah
+    }else if (kode_brg>=3 || kode_brg==0){
+      cout << "kode salah!" << endl;
+      break;
+    }
+  }
+}
