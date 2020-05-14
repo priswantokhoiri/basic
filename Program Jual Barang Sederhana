@@ -33,7 +33,7 @@ cin >> jmlh;
       int total = hrg*jmlh;
       cout << " total belanja  : Rp." << total;
       //error ketika kode ID salah
-    }else if (kode_brg>=3 || kode_brg==0){
+    }else if (kode_brg>=4 || kode_brg==0){
       cout << "kode salah!" << endl;
       break;
     }
