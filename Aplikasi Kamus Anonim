@@ -1,0 +1,16 @@
+#author :
+#nama   : Priswanto khoiri
+#NIM    : 04319003
+#prodi  : Teknik Informatika
+
+
+kamus = {
+    "GO":"Pergi",
+    "Eat":"Makan",
+    "Find":"Mencari",
+    "Bring":"Membawa"
+}
+
+print ("aplikasi Kamus Anonim \n")
+for key, value in kamus.items() :
+    print("%s : %s" % (key, value))
